@@ -1,5 +1,5 @@
 :root {
-	 --font-family: "Poppins", sans-serif;
+	 --font-family: "Space Grotesk", sans-serif;
 
 	--main-color: #21092f;
 	--second-color: #fff;
@@ -15,7 +15,7 @@ a {
 	text-decoration: none;
 }
 body {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--main-color);
