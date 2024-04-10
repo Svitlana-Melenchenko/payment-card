@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"/>
+		<title>Payment card</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<body>
+		<header></header>
+
+		<main class="main">
+			<article class="payment-card">
+				<h1 class="visually-hidden">/</h1>
+				<div class="contsiner-bg">
+					<img class="front-side" width="447" height="245"  src="./img/card-1.jpg" alt="front side card">
+
+					<img class="back-side" 
+					width="447" height="245" src="./img/card-2.jpg" alt="back side">					
+				</div>
+				<div>
+					<form class="form-payment" name="payment-info" method="post">
+						<label class="payment pay-lab ">
+							<span class="payment-title">Cardholder Name</span>
+							<input class="payment-input input-width" type="text" name="card-name" autocomplete="on" required placeholder="e.g. Jane Appleseed">
+						</label>
+
+						<label class="payment pay-lab">
+							<span class="payment-title">Card Number</span>
+							<input class="payment-input input-width" type="number"  name="card-number" autocomplete="on" required placeholder="e.g. 1234 5678 9123 0000">
+						</label>
+
+						<div class="pay-container">
+									<label class="payment-date">
+									<span class="payment-title">Exp. Date</span>
+									<input class="payment-input pay-date" type="number"  name="card-month" autocomplete="on" required placeholder="MM" min="2" max="2">
+								</label>
+								<label >
+									<span class="payment-title titel">(MM/YY)</span>
+									<input class="payment-input pay-date" type="number"  name="card-year" autocomplete="on" required placeholder="YY" min="2" max="4" ></label>
+		
+								<label class="payment-cvc">
+									<span class="payment-title">CVC</span>
+									<input class="payment-input pay-cvc" type="number"  name="card-cvc" autocomplete="on" required placeholder="e.g. 123" min="3" max="4" >
+								</label>
+						</div>
+							
+						<button class="pay-btn" type="submit">Confirm
+						</button>
+
+					</form>
+				</div>
+			</article>
+			
+		</main>
+		<footer></footer>
+	</body>
+</html>
